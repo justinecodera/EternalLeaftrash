@@ -1,0 +1,440 @@
+/* 
+color palette
+#ebebfa white
+#e6e6e6	light
+#2b2624 black
+#36344a	dark
+#36d9d1	accent
+
+
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@400;600&family=DM+Sans:wght@400;500;700&display=swap');
+
+.y {
+	background-color: yellow;
+}
+.r {
+	background-color: red;
+}
+a,
+h1,
+h2,
+h3,
+h4,
+h5{
+	font-family: DM Sans, sans-serif;
+}
+h2 {
+	display: inline;
+}
+p {
+	font-family: Architects Daughter, cursive;
+}
+
+body {
+
+}
+h1 {
+	color: #e6e6e6;
+	font-size: 5rem;
+}
+a {
+	text-decoration: none;
+}
+.card {
+	margin: .1rem;
+}
+.card img {
+	position: relative;
+	object-fit: cover;
+	height: 30rem;
+}
+.container {
+	width: 80%;
+}
+
+/* navbar css */
+.navbar {
+	z-index: 100000;
+	transition: 0.6s;
+}
+.navbar img {
+	width: 5rem;
+	height: 5rem;
+	filter: brightness(1);
+}
+.navbar-toggler-icon img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transition: 0.3s;
+	filter: invert(100%);
+}
+.nav-link {
+	color: #e6e6e6;
+	border-radius: 100%;
+	transition: 0.3s;
+}
+.nav-link-active {
+	background-color: #36344a;
+	border-radius: .5rem;
+	color: #ebebfa;
+}
+.navbar-brand {
+	color: #e6e6e6;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+}
+.navbar-text {
+	color: #e6e6e6;
+}
+
+nav.sticky {
+	transition: 0.6s;
+	padding: .8rem;
+	background-color: #e6e6e6;
+}
+nav.sticky .nav-link {
+	color: #2b2624;
+	border-radius: 100%;
+	transition: 0.3s;
+}
+nav.sticky .nav-link-active {
+	background-color: #36344a;
+	color: #ebebfa;
+	border-radius: .5rem;
+	transition: 0.3s;
+}
+nav.sticky .navbar-brand {
+	color: #2b2624;
+	transition: 0.6s;
+}
+nav.sticky .navbar-text {
+	color: #2b2624;
+	transition: 0.6s;
+}
+nav.sticky img {
+	filter: brightness(0);
+	transition: 0.6s;
+}
+
+/* hero css */
+.hero {
+	height: 100vh;
+}
+.hero img {
+	position: absolute;
+	height: 100%;
+	object-fit: cover;
+	padding: 0;
+	z-index: -1;
+}
+.hero p {
+	font-size: 2rem;
+}
+.hero {
+	align-self: center;
+	text-align: center;
+	color: #e6e6e6;
+}
+
+/* body css */
+.button {
+	background-color: #e6e6e6;
+	filter: opacity(50%);
+	padding: .8rem;
+	border-radius: .5rem;
+	color: #36344a;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+.button-shop {
+	background-color: #36d9d1;
+	color: #36344a;
+	filter: opacity(100%);
+}
+.proceed {
+	width: 2rem;
+	height: 2rem;
+	position: relative;
+	text-align: right;
+
+}
+.mini-nav {
+	padding: 1.5rem;
+}
+.mini-nav h1 {
+	color: #36344a;
+	transition: 0.3s;
+
+}
+.btn-shop {
+	background-color: #ebebfa;
+	color: #36344a;
+	transition: 0.4s;
+}
+
+
+/* cards for story page */
+
+.card-img-story {
+	width: 100%;
+	position: absolute;
+	opacity: 100%;
+	transition: 0.6s;
+}
+.card-story {
+	height: 100%;
+	width: 100%;
+	transition: 0.3s;
+	position: absolute;
+	border-radius: 100%; /*add hover effect*/
+	transform: scale(0);
+	background-color: #ebebfa;
+}
+
+/* footer css */
+.footer {
+	background-color: #36344a;
+	height: 100vh;
+	padding-top: 5rem;
+	margin-top: 1rem;
+}
+.footer .row .col-4 {
+	display: block;
+	text-align: center;
+
+}
+.footer .row {
+	margin-bottom: 5rem;
+	position: relative;
+}
+.footer a {
+	padding: 0;
+	margin: 0;
+}
+.footer img {
+	padding: 0;
+	margin: 0 1rem;
+}
+.footer .row .logo {
+	width: 20rem;
+	height: 20rem;
+}
+.footer h1 {
+	font-size: 4rem;
+}
+.footer h3 {
+	font-size: 1.5rem;
+	color: #e6e6e6;
+}
+.footer .icons {
+	display: block;
+}
+.footer-icon {
+	width: 2rem;
+	height: 2rem;
+	filter: invert(50%);
+	transition: 0.3s;
+}
+.footer .row-follow_us {
+	margin-bottom: 1rem;
+
+}
+.footer .row-logo {
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+.footer .row-links {
+	margin-bottom: 10rem;
+}
+.copyright {
+	color: #36d9d1;
+}
+
+/* products page */
+.products-padding {
+	padding-top: 7rem;
+}
+.products-nav {
+	padding-left: 3rem;
+	color: #535353;
+	cursor: pointer;
+}
+
+.mini-nav_active {
+	color: #2b2624;
+}
+/* carousel */
+/*.carousel {
+	height: 100vh;
+}*/
+.carousel .carousel-inner{
+	position: relative;
+	padding: 10rem 0;
+}
+.carousel-item {
+	height: 100%;
+	transition: 0.6s;
+}
+.clients-feedback h1 {
+	color: #2b2624;
+	padding-top: 5rem;
+}
+.carousel-item .row .feedback-container {
+	margin: 2rem;
+	padding: 1rem;
+	border-radius: .5rem;
+	background-color: #e6e6e6;
+}
+.carousel-item .row .col-4 img {
+	width: 8rem;
+	height: 8rem;
+	border-radius: .5rem;
+}
+
+
+/* story */
+.story-padding {
+	padding-top: 7rem;
+	width: 100%;
+}
+.story-padding .row {
+	min-height: 20rem;
+}
+.story-padding .row h1 {
+	color: #36344a;
+}
+.story-padding .row .col-4, .story-padding .row .col-8 {
+	height: 100%;
+	position: relative;
+}
+.story-padding .row .col-4 img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.story-padding .row .col-8 p {
+	text-align: justify;
+	font-size: 1.5rem;
+}
+
+/* contacts */
+.contacts-padding {
+	padding-top: 7rem;
+}
+.contacts-padding h1 {
+	color: #36344a;
+	text-align: center;
+}
+.contact-icons img{
+	width: 3rem;
+	height: 3rem;
+}
+.contacts-padding .row{
+	margin: 2rem 0;
+}
+.contacts-padding .row .col-6 h3 {
+	text-align: right;
+}
+.contact-map {
+	margin: 2rem 0;
+}
+/* checkout */
+.checkout-padding {
+	padding-top: 7rem;
+}
+.checkout {
+	background-color: #e6e6e6;
+	padding: 3rem;
+}
+.checkout .row h1 {
+	color: #36344a	;
+}
+.total-checkout .total-cost a {
+	text-decoration: none;
+}
+.total-checkout .total-cost h3 {
+	display: inline;
+}
+.total-checkout .total-cost a h3 {
+	margin-left: 2rem;
+	color: #36d9d1;
+	background-color: #36344a;
+	padding: .5rem;
+	border-radius: .5rem;
+}
+/* hover */
+.button:hover {
+	color: #2b2624;
+	background-color: #d1d1d1;
+	filter: opacity(100%);
+	transition: 0.4s;
+}
+.button-shop:hover {
+	background-color: #21827d;
+	color: #fff;
+	filter: opacity(100%);
+	transition: 0.4s;
+}
+.navbar-toggler-icon:hover img {
+	filter: invert(0);
+	transition: 0.3s;
+}
+.nav-link:hover, .nav-link:focus {
+	color: #36d9d1;
+	background-color: #36344a;
+	border-radius: .5rem;
+	transition: 0.4s;
+}
+.navbar-brand:hover, .navbar-text:hover {
+	color: #fff;
+	transition: 0.4s;
+}
+nav.sticky .nav-link:hover {
+	color: #36d9d1;
+	background-color: #36344a;
+	border-radius: .5rem;
+	transition: 0.4s;
+}
+.proceed:hover h1 {
+	color: #2b2624;
+	transform: translateX(3%);
+	transition: 0.6s;
+}
+.btn-shop:hover {
+	background-color: #36344a;
+	color: #e6e6e6;
+	transition: 0.4s;
+}
+.card:hover .card-story {
+	transform: scale(1);
+	border-radius: 0;
+	transition: .5s;
+}
+.footer-icon:hover {
+	transition: 0.3s;
+	filter: invert(0);
+}
+
+/* onclick */
+.products-nav:active {
+	color: #36344a;
+
+}
+.prod {
+	transform: scale(1.0);
+	animation-delay: 0.6s;
+	transition: transform 0.6s;
+}
+
+.hidden {
+	transform: scale(0);
+	position: absolute;
+	visibility: hidden;
+	animation-delay: position 1s;
+	transition: transform 0.6s;/* smart move! */
+}
