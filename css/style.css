@@ -8,6 +8,7 @@ color palette
 
 
  */
+
  @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@400;600&family=DM+Sans:wght@400;500;700&display=swap');
 
 .y {
@@ -23,6 +24,7 @@ h3,
 h4,
 h5{
 	font-family: DM Sans, sans-serif;
+	text-shadow: 1rem 1rem 2rem rgba(43, 38, 36, 0.5);
 }
 h2 {
 	display: inline;
@@ -43,11 +45,14 @@ a {
 }
 .card {
 	margin: .1rem;
+	border-radius: 1rem;
+	box-shadow: .5rem .5rem 1.5rem rgba(43, 38, 36, 0.4)	;
 }
 .card img {
 	position: relative;
 	object-fit: cover;
 	height: 30rem;
+	border-radius: inherit;
 }
 .container {
 	width: 80%;
@@ -175,6 +180,7 @@ nav.sticky img {
 	background-color: #ebebfa;
 	color: #36344a;
 	transition: 0.4s;
+	box-shadow: 0 0 .8rem rgba(43, 38, 36, 0.4);
 }
 
 
@@ -216,7 +222,7 @@ nav.sticky img {
 	padding: 0;
 	margin: 0;
 }
-.footer img {
+.footer .icons img {
 	padding: 0;
 	margin: 0 1rem;
 }
@@ -226,6 +232,7 @@ nav.sticky img {
 }
 .footer h1 {
 	font-size: 4rem;
+	text-align: center;
 }
 .footer h3 {
 	font-size: 1.5rem;
@@ -437,4 +444,27 @@ nav.sticky .nav-link:hover {
 	visibility: hidden;
 	animation-delay: position 1s;
 	transition: transform 0.6s;/* smart move! */
+}
+
+
+@media (max-width: 640px) {
+h1 {
+	color: #e6e6e6;
+	font-size: 3rem;
+}
+.hero p {
+	font-size: 1.5rem;
+}
+
+nav.sticky {
+	transition: 0.6s;
+	padding: .6rem;
+	background-color: #e6e6e6;
+}
+.button {
+	padding: .8rem;
+	font-size: 1.2rem;
+}
+
+
 }
